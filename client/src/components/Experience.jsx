@@ -15,12 +15,11 @@ import { Scene } from "./Scene";
 
 export const scenes = [
   {
-    // path: "models/cybertruck_scene.glb",
     path: "models/table_scene.glb",
     mainColor: "#f9c0ff",
     name: "Coffee table",
     description:
-        "So, pour yourself a cup, sink into the embrace of the nearest sofa, and let the stories unfold. For within these four corners, every sip holds the promise of another adventure, and every conversation, the potential for deeper connections. Welcome to the heart of your home. Welcome to the coffee table.",
+        "So, pour yourself a cup, sink into the embrace of the nearest sofa, and let the stories unfold.",
     price: 320,
     range: 660,
   },
@@ -28,7 +27,7 @@ export const scenes = [
     path: "models/wineRack_scene.glb",
     mainColor: "#c0ffe1",
     name: "Wine Rack",
-    description: "As you run your fingers along the cool metal or polished wood, you're not just touching a rack; you're caressing a legacy—a testament to craftsmanship and tradition. It's a symphony of flavors waiting to be uncorked, a journey through vineyards and valleys, captured in every glass.",
+    description: "It's a symphony of flavors waiting to be uncorked.",
     price: 650,
     range: 576,
   },
@@ -36,7 +35,7 @@ export const scenes = [
     path: "models/bookRack_scene.glb",
     mainColor: "#ffdec0",
     name: "Book Rack",
-    description: "Step into a world where imagination knows no bounds, where stories take flight and knowledge blossoms. This isn't just a book rack; it's a gateway to adventure, a haven for bibliophiles, and a sanctuary for the curious mind.",
+    description: "This isn't just a book rack; it's a gateway to adventure.",
     price: 450,
     range: 800,
   },
@@ -141,29 +140,6 @@ export const Experience = () => {
         <ambientLight intensity={0.2} />
         <Environment preset={"city"} />
         <CameraHandler slideDistance={slideDistance} />
-        {/* MAIN WORLD */}
-        {/*<group>*/}
-        {/*  <mesh position-y={viewport.height / 2 + 1.5}>*/}
-        {/*    <sphereGeometry args={[1, 32, 32]} />*/}
-        {/*    <MeshDistortMaterial color={scenes[0].mainColor} speed={3} />*/}
-        {/*  </mesh>*/}
-
-        {/*  <mesh*/}
-        {/*      position-x={viewport.width + slideDistance}*/}
-        {/*      position-y={viewport.height / 2 + 1.5}*/}
-        {/*  >*/}
-        {/*    <boxGeometry />*/}
-        {/*    <MeshDistortMaterial color={scenes[1].mainColor} speed={3} />*/}
-        {/*  </mesh>*/}
-
-        {/*  <Dodecahedron*/}
-        {/*      position-x={2 * (viewport.width + slideDistance)}*/}
-        {/*      position-y={viewport.height / 2 + 1.5}*/}
-        {/*  >*/}
-        {/*    <MeshDistortMaterial color={scenes[2].mainColor} speed={3} />*/}
-        {/*  </Dodecahedron>*/}
-        {/*</group>*/}
-
         <Grid
             position-y={-viewport.height / 2}
             sectionSize={1}

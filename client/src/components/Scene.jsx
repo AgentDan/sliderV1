@@ -104,9 +104,5 @@ export const Scene = ({ mainColor, path, ...props }) => {
         </Environment>
       </group>
     </>
-  );
-};
-
-useGLTF.preload("/models/cybertruck_scene.glb");
-useGLTF.preload("/models/model3_scene.glb");
-useGLTF.preload("/models/semi_scene.glb");
+  )
+}
