@@ -1,9 +1,7 @@
 import {
   CameraControls,
-  Dodecahedron,
   Environment,
   Grid,
-  MeshDistortMaterial,
   RenderTexture,
 } from "@react-three/drei";
 import { useThree } from "@react-three/fiber";
