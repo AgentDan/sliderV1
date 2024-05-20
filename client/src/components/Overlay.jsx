@@ -35,7 +35,7 @@ export const Overlay = () => {
                     target="_blank"
                     className="flex justify-end"
                 >
-                    <span className="content-center text-2xl bg-amber-400">ddd</span>
+                    <span className="content-center text-2xl">ddd</span>
                     <img src={img2}
                          alt="designer"
                          className="w-10 h-10 pointer-events-auto cursor-pointer"
@@ -48,12 +48,6 @@ export const Overlay = () => {
                     />
                 </div>
 
-                {/*<svg*/}
-                {/*    className=" w-40 h-16 mx-auto mt-8 "*/}
-                {/*    viewBox="0 0 342 35"*/}
-                {/*    xmlns="http://www.w3.org/2000/svg"*/}
-                {/*>*/}
-                {/*</svg>*/}
                 <div className="absolute top-0 bottom-0 left-0 right-0 flex-1 flex items-center justify-between p-4">
 
                     <svg
